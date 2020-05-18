@@ -59,18 +59,24 @@ int main() {
 	Node *root1 =NULL;
 	
 	Insert_node(&root1, 10);
-
 	Insert_node(&root1, 5);
 	Insert_node(&root1, 7);
 	Insert_node(&root1, 20);
 	Insert_node(&root1, 30);
 	Insert_node(&root1, 6);
 	
-	
-	//Prerder traversal
 	cout<<"Preorder Traversal\n";
 	PreOrder(root1);
 	cout<<"\nPostOrder Traversal\n";
 	PostOrder(root1);
 	return 0;
 }
+
+/*OUTPUT:--
+
+Preorder Traversal
+10 5 7 6 20 30 
+PostOrder Traversal
+6 7 5 30 20 10 
+
+*/
