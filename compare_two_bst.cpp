@@ -27,7 +27,11 @@ int compare_bst(struct Node *root1, Node *root2)
 {
 	if(root1== NULL&& root2 ==NULL) 
 		return 1;
-	if(root1->data ==root2->data && compare_bst(root1->left, root2->left)
+	else if(root1 != NULL && root2 ==NULL)
+		return 0;
+	else if(root1 ==NULL && root2 !=NULL)
+		return 0;
+	else if(root1->data ==root2->data && compare_bst(root1->left, root2->left)
 		&&compare_bst(root1->right, root2->right))
 		return 1;
 	else 
