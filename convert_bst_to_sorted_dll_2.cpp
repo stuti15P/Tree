@@ -107,6 +107,5 @@ int main() {
 	convert_bst_to_dll(root, headLinkedList, prev);
 	print_Dll(headLinkedList );
 
-	
 	return 0;
 }	
